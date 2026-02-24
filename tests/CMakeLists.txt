@@ -12,7 +12,7 @@ set(INSTALL_GTEST OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 add_executable(balance_score_tests
-    placeholder_test.cpp
+    health_test.cpp
 )
 
 target_link_libraries(balance_score_tests

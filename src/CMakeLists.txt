@@ -2,7 +2,7 @@ add_library(balance_score STATIC)
 
 target_sources(balance_score
     PRIVATE
-        placeholder.cpp
+        health.cpp
 )
 
 target_include_directories(balance_score
