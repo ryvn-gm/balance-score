@@ -1,4 +1,4 @@
-add_library(balance_score STATIC)
+add_library(balance_score)
 
 target_sources(balance_score
     PRIVATE
@@ -14,3 +14,10 @@ target_include_directories(balance_score
 )
 
 target_compile_features(balance_score PUBLIC cxx_std_17)
+
+set_target_properties(balance_score PROPERTIES
+    CXX_VISIBILITY_PRESET hidden
+    VISIBILITY_INLINES_HIDDEN ON
+)
+
+target_compile_definitions(balance_score PRIVATE BALANCE_SCORE_BUILDING)

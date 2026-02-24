@@ -12,6 +12,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+option(BUILD_SHARED_LIBS "Build shared libraries (.so/.dylib)" OFF)
+
 add_subdirectory(src)
 
 option(BUILD_EXAMPLES "Build example applications" ON)
