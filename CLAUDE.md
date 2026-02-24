@@ -35,7 +35,9 @@ This project follows strict TDD (Test-Driven Development):
 - `include/balance_score/` - Public API headers (consumed by SDK users)
 - `src/` - Implementation files and private headers
 - `tests/` - GoogleTest-based tests
+- `examples/` - Example applications demonstrating SDK usage
 - `cmake/` - CMake modules and platform toolchain files
+- `docs/specs/` - Architecture and specification documents
 
 ## Code Conventions
 

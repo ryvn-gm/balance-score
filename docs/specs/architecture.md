@@ -18,6 +18,9 @@ balance-score/
 │   └── CMakeLists.txt
 ├── tests/
 │   └── CMakeLists.txt
+├── examples/
+│   ├── CMakeLists.txt
+│   └── main.cpp
 └── docs/
     └── specs/
 ```
@@ -53,6 +56,14 @@ CMake 模組與平台工具鏈檔案。
 
 - 預留給未來的 iOS / Android 交叉編譯工具鏈
 - 例如：`ios.toolchain.cmake`、`android.toolchain.cmake`
+
+### `examples/`
+
+範例應用程式，模擬 mobile app 如何呼叫 SDK。
+
+- `main.cpp`：互動式終端範例，可從 stdin 輸入資料
+- 執行方式：`./build/examples/balance_score_example`
+- 透過 `BUILD_EXAMPLES` CMake 選項控制是否建置
 
 ### `docs/specs/`
 

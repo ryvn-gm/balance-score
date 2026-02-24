@@ -33,7 +33,15 @@ balance-score/
 ├── include/balance_score/   # Public API headers
 ├── src/                     # Implementation
 ├── tests/                   # GoogleTest-based tests
+├── examples/                # Example applications
 ├── cmake/                   # CMake modules & toolchains
+├── docs/specs/              # Architecture & specs
 ├── CMakeLists.txt           # Root build configuration
 └── CLAUDE.md                # Development conventions
+```
+
+## Run Example
+
+```bash
+./build/examples/balance_score_example
 ```
