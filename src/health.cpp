@@ -1,4 +1,5 @@
 #include <balance_score/health.h>
+#include <balance_score/balance_score_c.h>
 
 namespace balance_score {
 
@@ -11,3 +12,16 @@ std::string version() {
 }
 
 }  // namespace balance_score
+
+extern "C" {
+
+bool bs_healthy(void) {
+    return balance_score::healthy();
+}
+
+const char* bs_version(void) {
+    static const std::string v = balance_score::version();
+    return v.c_str();
+}
+
+}
